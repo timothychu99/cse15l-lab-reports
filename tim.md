@@ -4,6 +4,9 @@ This is the TIM FILE
 # Heading 1
 ## Heading 2
 [lab_report_link](https://timothychu99.github.io/cse15l-lab-reports)
+
+![hi](pika.jpg)
+![hi](https://timothychu99.github.io/cse15l-lab-reports/pika.jpg)
 ![Image](http://url/a.png)
 
 ![Image2](pika.jpg)
