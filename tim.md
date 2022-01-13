@@ -13,9 +13,12 @@ This is the TIM FILE
 1. One
 2. Two
 3. Three
+
 Horizontal rule:
 ---
+
 'inline' w/ backticks
+
 '''
 #code
 print 'hi'
