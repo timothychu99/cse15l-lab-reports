@@ -5,6 +5,9 @@ This is the TIM FILE
 ## Heading 2
 [lab_report_link](https://timothychu99.github.io/cse15l-lab-reports)
 ![Image](http://url/a.png)
+
+![Image2](pika.jpg)
+![Image2](https://timothychu99.github.io/cse15l-lab-reports/pika.jpg)
 > Blockquote
 > HI
 * list1
