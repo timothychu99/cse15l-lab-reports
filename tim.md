@@ -17,9 +17,9 @@ This is the TIM FILE
 Horizontal rule:
 ---
 
-'inline' w/ backticks
+`inline` w/ backticks
 
-'''
+```
 #code
 print 'hi'
-'''
+```
