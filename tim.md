@@ -21,5 +21,5 @@ Horizontal rule:
 
 ```
 #code
-print 'hi'
+print 'updated'
 ```
