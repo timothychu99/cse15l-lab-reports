@@ -1,3 +1,4 @@
+# Lab Report 1
 ## By: Timothy Chu
 # Installing VScode
 * Click this [link](https://code.visualstudio.com/) to install VScode
