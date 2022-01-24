@@ -1,3 +1,4 @@
+[Return to Lab Reports Main Page](..)
 ## Lab Report 1, Timothy Chu
 
 
