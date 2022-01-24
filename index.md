@@ -1,5 +1,5 @@
 Hello, i'm Tim
 
-Lab Reports:
+# Lab Reports:
 
-[LabReport1](/lab-report1/lab-report1.md)
+* [LabReport1](/lab-report1/lab-report1.md)
