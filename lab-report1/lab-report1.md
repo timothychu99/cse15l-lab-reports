@@ -1,4 +1,4 @@
-[Return to Lab Reports Main Page](/index.md)
+[Return to Lab Reports Main Page](../index.md)
 ## Lab Report 1, Timothy Chu
 
 
