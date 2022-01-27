@@ -1,9 +1,13 @@
 ## Timothy Chu
 * No bugs for all the test-files passed for my Markdown.java file, so I made my own test file
-
+* Committed one file that made test 9 work
+ ![](commitName.png)
+    * (commit message supposed to say test-9 pass)
+ 
 ## Fail-inducing Input and Output for all Changes
 - failure-inducing input: test-file9 [test-file9](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file9.md)
-- fail output: ![ssss](test-9fail.png)
+    - input: ``[](page(1).com)`` expect: ``page(1).com``
+- failure-inducing output: ![ssss](test-9fail.png)
 
 ## Change 1: Create counter variables to track the paranthesis
  ![change1](parse1.png)
