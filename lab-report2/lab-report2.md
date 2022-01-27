@@ -1,15 +1,20 @@
 ## Timothy Chu
-* No bugs for all the test-files passed for my Markdown.java file
-* so I made my own test files
+* No bugs for all the test-files passed for my Markdown.java file, so I made my own test file
 
-* failure-inducing input: [test-file9](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file9.md)
+## Fail-inducing Input and Output for all Changes
+- failure-inducing input: test-file9 [test-file9](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file9.md)
+- fail output: ![ssss](test-9fail.png)
 
-1. Create a counter to check the paranthesis
-    * fail output: ![ssss](test-9fail.png)
- 
-
-
-* Show a screenshot of the code change diff from Github (a page like this)
-* Link to the test file for a failure-inducing input that prompted you to make that change
-* Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this * should also be in the commit message history)
-* Write 2-3 sentences describing the relationship between the bug, the symptom, and the failure-inducing input.
+## Change 1: Create counter variables to track the paranthesis
+ ![change1](parse1.png)
+ * test-file9 (above) failed at tracking the amount of paranthesis ``[](page(1).com)``
+ * The bug is that the ``getLinks()`` method ends the link at the nearest ``)``. The symptom is that the  ``getLinks()`` method only tracks until the first ``)`` and only produces a fail-inducing output if their is more than one ``)`` in the link. It prompted me to create variables to track the paranthesis in the links.
+## Change 2: Update openparCounter to count the amount of `(` in the link
+ ![change2](parse2.png) 
+ * test-file9 (above) failed at tracking the amount of paranthesis ``[](page(1).com)``
+ * Running the failure-induced output helped me find out what the symptom was from what the input produced. The symptom that I encountered of having multiple ``)`` in the links showed that the bug was that I forgot to track if the ``)`` was part of the link. It sparked my idea to track the amounts of ```(``` that were inside the link to determine where the end of the link is.
+## Change 1: Set the end index of link to the last ``)`` of the link 
+ ![change3](parse3.png)
+ * test-file9 (above) failed at tracking the amount of paranthesis ``[](page(1).com)``
+ * The failure-inducing output showed some symptoms such as addressing that there may be lingering ``)`` that can infect the program output. The bug of having
+to track if the ``)`` is part of a bracket ``(<words>)``. The bug of not tracking the bracket relationships within the links made me fix this issue.
