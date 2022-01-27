@@ -3,7 +3,10 @@
 * so I made my own test files
 
 * failure-inducing input: [test-file9](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file9.md)
-* fail output: ![ssss](9fail.png)
+
+1. Create a counter to check the paranthesis
+    * fail output: ![ssss](test-9fail.png)
+ 
 
 
 * Show a screenshot of the code change diff from Github (a page like this)
