@@ -31,4 +31,10 @@ to track if the ``)`` is part of a bracket ``(<words>)``. The bug of not trackin
  - failure-induce-input: test-file10 [test-file10](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file10.md)
     - input: ``[](page.com) [](page.com)`` expect: ``[page.com, page.com]``
  - failure-inducing output: ![sssss](test_10_fail.png)
+ - one commit to make test_10 pass:
+   - ![test_10_commit](test10commit.png)
+ * ![change](test_file_code_pass.png)
+ * test-file 10 (above) failed to be able to detect multiple links on one line which was ``[](page.com) [](page.com)``
+ * The failure-inducing output showed some symptoms such as not addressing other links because it was programmed to only track 1 link. The bug was found out from what the failure-inducint output printed. The failure-inducing output was found out from the failure-inducing input of a line with multiple links. So any line with multiple links is a failure inducing input that causes an output of that only expected one link. The output bug is that the program did not address cases of multiple links for a line. To fix the bug, I made the program count the amount of links the program needed to find per line.
+
 # Bug 3: can not have spaces in the links
