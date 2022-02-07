@@ -1,5 +1,7 @@
 ## Timothy Chu
-* No bugs for all the test-files passed for my Markdown.java file, so I made my own test file
+* No bugs for all the test-files passed for my Markdown.java file, so I made my own test files
+
+# Bug 1: can not support closed paranethesis in the links
 * Committed one file that made test 9 work
  ![](commitName.png)
     * (commit message supposed to say test-9 pass)
@@ -24,3 +26,7 @@
  * test-file9 (above) failed at tracking the amount of paranthesis in ``[](page(1).com)``
  * The failure-inducing output showed some symptoms such as addressing that there may be lingering ``)`` that can infect the program output. The bug of having
 to track if the ``)`` is part of a bracket ``(<words>)``. The bug of not tracking the bracket relationships within the links made me fix this issue.
+
+# Bug 2: can not have multiple links on the same line
+ 
+# Bug 3: can not have spaces in the links
