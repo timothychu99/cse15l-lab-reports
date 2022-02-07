@@ -35,17 +35,20 @@ to track if the ``)`` is part of a bracket ``(<words>)``. The bug of not trackin
    - ![test_10_commit](test10commit.png)
  * ![change](test_file_code_pass.png)
  * test-file 10 (above) failed to be able to detect multiple links on one line which was ``[](page.com) [](page.com)``
- * The failure-inducing output showed some symptoms such as not addressing other links because it was programmed to only track 1 link. The bug was found out from what the failure-inducint output printed. The failure-inducing output was found out from the failure-inducing input of a line with multiple links. So any line with multiple links is a failure inducing input that causes an output of that only expected one link. The output bug is that the program did not address cases of multiple links for a line. To fix the bug, I made the program count the amount of links the program needed to find per line.
+ * The failure-inducing output showed some symptoms such as not addressing other links because it was programmed to only track 1 link. The bug was found out from what the failure-inducint output printed. The failure-inducing output was found out from the failure-inducing input of a line with multiple links. So any line with multiple links is a failure inducing input that causes an output of that only expected one link. The bug is that the program did not address cases of multiple links for a line. To fix the bug, I made the program count the amount of links the program needed to find per line.
 
 # Bug 3: can not have spaces in the links
  - failure-induce-input: test-file8 [test-file8](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file8.md)
-    - input: ```[](a link on the first line)
-                 [```
+    - input: 
+   ```
+      [](a link on the first line)
+      [
+    ```
                 
-      expect: ``[page.com, page.com]``
- - failure-inducing output: ![sssss](test_10_fail.png)
+      expect: ``[]``
+ - failure-inducing-output: ![sssss](test_8_fail.png)
  - one commit to make test_10 pass:
-   - ![test_10_commit](test10commit.png)
- * ![change](test_file_code_pass.png)
- * test-file 10 (above) failed to be able to detect multiple links on one line which was ``[](page.com) [](page.com)``
- * The failure-inducing output showed some symptoms such as not addressing other links because it was programmed to only track 1 link. The bug was found out from what the failure-inducint output printed. The failure-inducing output was found out from the failure-inducing input of a line with multiple links. So any line with multiple links is a failure inducing input that causes an output of that only expected one link. The output bug is that the program did not address cases of multiple links for a line. To fix the bug, I made the program count the amount of links the program needed to find per line.
+   - ![test_10_commit](test8commit.png)
+ * ![change](test_file_code_pass2.png)
+ * test-file 8 (above) failed to be able to address that links do not contain spaces
+ * The failure-inducing output showed some symptoms such as not addressing spaces because it was not programmed to detect spaces. The bug was found out from what the failure-inducing output printed. The failure-inducing output was found out from the failure-inducing input of a 'link' with spaces. So any line with a spce in the link is a failure inducing input that causes an output of labeling a link with spaces a link. The bug is that the program did not address cases of of links with spaces. To fix the bug, I made the program see if a link has spaces and label them as not being links.
