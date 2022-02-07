@@ -8,7 +8,7 @@
  
 ## Fail-inducing Input and Output for all Changes
 - failure-inducing input: test-file9 [test-file9](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file9.md)
-    - input: ``[](page(1).com)`` expect: ``page(1).com``
+    - input: ``[](page(1).com)`` expect: ``[page(1).com]``
 - failure-inducing output: ![ssss](test-9fail.png)
 
 ## Change 1: Create counter variables to track the paranthesis
@@ -28,6 +28,6 @@
 to track if the ``)`` is part of a bracket ``(<words>)``. The bug of not tracking the bracket relationships within the links made me fix this issue.
 
 # Bug 2: can not have multiple links on the same line
- * failure-induce-input: test-file10 [test-file10](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file10.md)
- 
+ - failure-induce-input: test-file10 [test-file10](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file10.md)
+    - input: ``[](page.com) [](page.com)`` expect: ``[page.com, page.com]``
 # Bug 3: can not have spaces in the links
