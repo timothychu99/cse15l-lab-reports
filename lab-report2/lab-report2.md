@@ -28,6 +28,6 @@
 to track if the ``)`` is part of a bracket ``(<words>)``. The bug of not tracking the bracket relationships within the links made me fix this issue.
 
 # Bug 2: can not have multiple links on the same line
- * failure-induce-input: test-file10 [test-file10](
+ * failure-induce-input: test-file10 [test-file10](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file10.md)
  
 # Bug 3: can not have spaces in the links
