@@ -30,4 +30,5 @@ to track if the ``)`` is part of a bracket ``(<words>)``. The bug of not trackin
 # Bug 2: can not have multiple links on the same line
  - failure-induce-input: test-file10 [test-file10](https://raw.githubusercontent.com/timothychu99/markdown-parse/main/test-file10.md)
     - input: ``[](page.com) [](page.com)`` expect: ``[page.com, page.com]``
+ - failure-inducing output: ![sssss](test_10_fail.png)
 # Bug 3: can not have spaces in the links
