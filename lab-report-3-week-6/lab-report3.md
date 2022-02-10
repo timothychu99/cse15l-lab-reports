@@ -29,5 +29,5 @@
 * Log into ssh to see the file <filename> copied onto the server.
 
 ![sh](ssh_log2.png)
-* Doing the ``ls -al`` command, it will show us the files in the current directory and the times that it was changed. As you 
+* Doing the ``ls -al`` command, it will show us the files in the current home directory and the times that it was changed. As you 
 can see, the ``test`` file has been added onto the server. It has been succesfully added with the file's most recent changes.
