@@ -6,16 +6,18 @@
 - [My Markdown-Parse Repo](https://github.com/timothychu99/markdown-parse)
 - [Reviewed Repo](https://github.com/timothychu99/markdown_parse_2)
 
-# Running the Reviewed Repo Code
+# The tests that I came up with for the snippets
 ![](TestSnippetsCode.png)
+- I ran the snippets to see what the links were in the CommonMark demo website.
 
+# Running my MarkdownParse Code on through MarkdownParseTest
 ![](SnippetOutpustOwnTests.png)
 - It shows that it failed on all Snippet1, Snippet2 and Snippet3.
 - In the code, it shows the line java.lang.assertionError with the expected and what it found for Snippet1 while index out of bound exceptions for 
 Snipping2 and Snipping3.
 - It shows on the at MarkdownParseTest.testSnippet line the place where the error occured in the MarkdownParseTest.java file.
 
-
+# Running the Reviewed Repo Code
 ![](RunReviewedSnippetTests.png)
 - It shows that it failed on Snippet1 and Snippet3 but passed on Snippet2.
 - In the code, it shows the line java.lang.assertionError with the expected and what it found.
