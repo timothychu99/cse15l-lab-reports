@@ -1,3 +1,6 @@
+[Return to Lab Reports Main Page](../index.md)
+## Lab Report 5, Timothy Chu
+
 ## How I Found Tests with Diff Results
 - I used the command ``diff <test_file1> <test_file2> ``.
 - when running it, it will show in terminal an output like:
