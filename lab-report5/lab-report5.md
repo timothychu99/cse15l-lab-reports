@@ -28,9 +28,11 @@
    
  ##Test2 for line 906 of both results.txt and another_result.txt
 - line 905 and 906 of results.txt
+
 ![line 906 of results.txt](https://user-images.githubusercontent.com/60487968/157589850-9e587b8b-6b90-4c7e-ad68-ec545f640c16.png)
 
 - line 906 and 907 of another-result.txt
+
 ![line 906 of another-result.txt](https://user-images.githubusercontent.com/60487968/157589794-2ae009f8-1fea-426a-830b-aa6d4fe0bb58.png)
 
 - test-files/506.md
